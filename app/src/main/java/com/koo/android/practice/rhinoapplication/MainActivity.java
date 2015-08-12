@@ -20,15 +20,14 @@ public class MainActivity extends Activity {
         runBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //get Text
                 EditText editText = (EditText) findViewById(R.id.edit_text);
                 Editable editable = editText.getText();
                 String scripts = editable.toString();
 
-                //RhinoSample rhino = new RhinoSample();
-                //rhino.runJavaScript(scripts);
-
-                RhinoJavaToJsSample rhinoj2j = new RhinoJavaToJsSample();
-                rhinoj2j.runJavaScript(scripts);
+                //run js
+                RhinoSample rhino = new RhinoSample();
+                rhino.runJavaScript(scripts);
             }
         });
     }
