@@ -24,8 +24,11 @@ public class MainActivity extends Activity {
                 Editable editable = editText.getText();
                 String scripts = editable.toString();
 
-                RhinoSample rhino = new RhinoSample();
-                rhino.runJavaScript(scripts);
+                //RhinoSample rhino = new RhinoSample();
+                //rhino.runJavaScript(scripts);
+
+                RhinoJavaToJsSample rhinoj2j = new RhinoJavaToJsSample();
+                rhinoj2j.runJavaScript(scripts);
             }
         });
     }
