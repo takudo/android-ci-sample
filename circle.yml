@@ -1,3 +1,7 @@
+dependencies:
+  pre:
+    - echo y | android update sdk --no-ui --all --filter "org.mozilla:rhino:1.7.7"
+
 test:
   override:
     # start the emulator
